@@ -1,0 +1,128 @@
+:root{
+    --dark-pink:#F55C7A;
+    --pink:#F56C77;
+    --light-pink:#F57C73;
+    --pastel-pink:#F68C70;
+    --dark-orange:#E76F51;
+    --orange:#F69C6D;
+    --dark-yellow:#F6AC69;
+    --yellow:#F6BC66;
+    --dark-green:#264653;
+    --green:#287271;
+    --light-green:#2A9D8F;
+}
+@font-face{
+    font-family: myFont;
+    src:url(./resources/coolvetica-condensed-rg.otf);
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-green);
+    margin: 0;
+
+}
+#image-div{
+    background: url('./resources/flower-photo.jpg');
+    background-position: 80%;
+    height: 100vh;
+    width: 500px;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+    height: 15%;
+    background-color: rgba(255,255,255,0.3);
+    font-family: myFont;
+    font-size: 80px;
+    gap: 10px;
+}
+#form-div{
+    width:500px;
+    background-color:var(--pastel-pink);
+    display: flex;
+    flex-direction: column;
+}
+#text-div{
+    flex: 1;
+    background-color: var(--orange);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 18px;
+}
+p{
+    margin:5px;
+    margin-left: 0;
+}
+#title{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#form{
+    flex: 1;
+    padding: 20px;
+    font-size: 18px;
+}
+#form-title{
+    font-size: 24px;
+    margin: 20px 0;
+}
+#button{
+    flex: 1;
+    padding: 20px;
+    background-color: var(--orange);
+}
+.columns{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}  
+
+label, input {
+    display: block;
+}
+input{
+    border-radius: 4px;
+    border: 2px solid lightgrey;
+}
+input:invalid{
+    border: 2px dashed red;
+}
+input:focus{
+    border: 2px solid var(--green); 
+    outline: none;
+    box-shadow: 1px 1px var(--dark-green);
+}
+input:required{
+    border: 2px solid lightgrey;
+}
+.hidden{
+    display: none;
+}
+#submit-button{
+    background-color: var(--dark-green);
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+}
+#submit-text{
+    font-size: large;
+}
+a{
+    text-decoration: none;
+    color: var(--dark-green);
+    font-weight: bold;
+}
+a:visited{
+    color: var(--green);
+}
+
