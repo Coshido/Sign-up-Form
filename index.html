@@ -21,7 +21,7 @@
             <p>We all <i>know</i> you want it!</p>
         </div>
         <div id="form-div">
-            <form method="get" action="" id="form" onsubmit="validatePassword()">
+            <form method="get" action="" id="form" onsubmit="">
                 <p id="form-title">Flowerify Yourself!</p>
                 <div class="columns">
                     <div class="form-entry">
@@ -34,19 +34,19 @@
                     </div>
                     <div class="form-entry">
                         <label for="email">Email:*</label>
-                        <input type="email" id="email" required placeholder="bob.bobbins@gmail.com" >      
+                        <input type="email" id="email" placeholder="bob.bobbins@gmail.com" >      
                     </div>
                     <div class="form-entry">
                         <label for="phone">Phone Number:</label>
-                        <input type="text" id="phone" placeholder="123456789" pattern="^[0-9]*$">      
+                        <input type="text" id="phone" placeholder="123456789">      
                     </div>
                     <div class="form-entry">
                         <label for="password">Password:*</label>
-                        <input type="password" id="password" required minlength="8">      
+                        <input type="password" id="password" >      
                     </div>
                     <div class="form-entry">
                         <label for="confirm">Confirm Password:*</label>
-                        <input type="password" id="confirm" required minlength="8">      
+                        <input type="password" id="confirm">      
                     </div>
                     <input type="submit" id="submit" class="hidden">
                 </div>
